@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using static GameTile;
 
+[SelectionBase]
 public class GameTileContent : MonoBehaviour
 {
 	[SerializeField]
@@ -10,7 +11,12 @@ public class GameTileContent : MonoBehaviour
 
 	public GameTileContentType Type => type;
 
+	public bool BlocksPath =>
+		Type == GameTileContentType.Wall || Type == GameTileContentType.Tower;
+
 	GameTileContentFactory originFactory;
+
+	public virtual void GameUpdate() { }
 
 	public GameTileContentFactory OriginFactory
 	{
