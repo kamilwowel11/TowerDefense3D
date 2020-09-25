@@ -361,7 +361,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2239942874469956163}
-  - component: {fileID: 6265176580947024680}
+  - component: {fileID: 4339682501221008956}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
@@ -387,7 +387,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6265176580947024680
+--- !u!114 &4339682501221008956
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -396,11 +396,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7815308099427208532}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd8b2de9a776eca479d6416bbde367c7, type: 3}
+  m_Script: {fileID: 11500000, guid: 11fbde05166f47e4aab803d4a8d78646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   type: 4
   targetingRange: 2.5
-  turret: {fileID: 2239942874469956163}
-  laserBeam: {fileID: 10903064396948966}
   damagePerSecond: 10
+  turret: {fileID: 4667719473904665915}
+  laserBeam: {fileID: 10903064396948966}
